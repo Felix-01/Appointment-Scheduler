@@ -20,69 +20,77 @@
     {
         @Html.AntiForgeryToken()
 
-        <div class="form-horizontal">
-            <div class=" col-md-offset-3 ">
-                <h4>Your Details </h4>
-            </div>
-
-            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-            <div class="form-group">
-                @Html.LabelFor(model => model.PPSNo, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-4">
-                    @Html.TextBoxFor(model => model.PPSNo, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.PPSNo, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-4">
-                    @Html.TextBoxFor(model => model.FirstName, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-4">
-                    @Html.TextBoxFor(model => model.LastName, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-4">
-                    @Html.TextBoxFor(model => model.Email, htmlAttributes: new { @class = "form-control" })
-                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                </div>
-            </div>
-
-            <div class="form-group">
-                @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    <input name="Date" type='date' style="height:30px; width:435px; border-radius:5px" required />
-                    <script type="text/javascript">
-                        var minDay = new Date().toISOString().split('T')[0];
-
-                        document.getElementsByName("Date")[0].setAttribute('min', minDay);
-
-                    </script>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-offset-3">
-                    <input type="submit" value="Save Booking" class="btn btn-success" style="width:200px; border-radius:5px" />
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-md-offset-3">
-                    <input type="reset" value="Clear Form" class="btn btn-danger" style="width:200px; border-radius:5px" />
-                </div>
-            </div>
-
+    <div class="form-horizontal">
+        <div class=" col-md-offset-3 ">
+            <h4>Fill In Your Details </h4>
         </div>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.PPSNo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.PPSNo, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.PPSNo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.FirstName, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.LastName, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextBoxFor(model => model.Email, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Date, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input name="Date" type='date' style="height:30px; width:435px; border-radius:5px; border-color:#84A4FA" required />
+                <script type="text/javascript">
+                    var minDay = new Date().toISOString().split('T')[0];
+
+                    document.getElementsByName("Date")[0].setAttribute('min', minDay);
+
+                </script>
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Comments, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-4">
+                @Html.TextAreaFor(model => model.Comments, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Comments, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-3">
+                <input type="submit" value="Save Booking" class="btn btn-success" style="width:200px; border-radius:5px" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-3">
+                <input type="reset" value="Clear Form" class="btn btn-danger" style="width:200px; border-radius:5px" />
+            </div>
+        </div>
+
+    </div>
     }
 
     <div class=" col-md-offset-2 ">

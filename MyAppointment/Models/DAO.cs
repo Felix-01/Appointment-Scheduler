@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
 
 
 namespace MyAppointment.Models
@@ -14,7 +11,7 @@ namespace MyAppointment.Models
 
         public int Insert(User user)
         {
-            string query = "Insert Into [User] Values(@PPSNo, @FirstName, @LastName, @Email, @Date)";
+            string query = "Insert Into [User] Values(@PPSNo, @FirstName, @LastName, @Email, @Date, @Comments)";
             SqlConnection conn = new SqlConnection(connectionString);
             SqlCommand cmd = new SqlCommand(query, conn);
             cmd.Parameters.AddWithValue("@PPSNo", user.PPSNo);
@@ -22,6 +19,7 @@ namespace MyAppointment.Models
             cmd.Parameters.AddWithValue("@LastName", user.LastName);
             cmd.Parameters.AddWithValue("@Email", user.Email);
             cmd.Parameters.AddWithValue("@Date", user.Date);
+            cmd.Parameters.AddWithValue("@Comments", user.Comments);
             
             int count = 0;
             try

@@ -1,0 +1,12 @@
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\bin\Debug\MyAppointmentManager.exe.config
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\bin\Debug\MyAppointmentManager.exe
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\bin\Debug\MyAppointmentManager.pdb
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.csprojResolveAssemblyReference.cache
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.ClientDetails.resources
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.Login.resources
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.NewUser.resources
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.Properties.Resources.resources
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.csproj.GenerateResource.Cache
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.csproj.CoreCompileInputs.cache
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.exe
+C:\Users\Harvey\source\repos\AppointmentManager\MyAppointmentManager\obj\Debug\MyAppointmentManager.pdb

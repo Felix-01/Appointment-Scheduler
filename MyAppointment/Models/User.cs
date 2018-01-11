@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
 
 namespace MyAppointment.Models
 {
@@ -24,5 +21,8 @@ namespace MyAppointment.Models
         [Required]
         [Display(Name ="Choose Your Date")]
         public DateTime Date { get; set; }
+        [Required]
+        [Display(Name ="Reason For Visit")]
+        public string Comments { get; set; }
     }
 }

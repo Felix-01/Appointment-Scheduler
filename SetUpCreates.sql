@@ -14,5 +14,6 @@ CREATE TABLE [User](
 	[FirstName] [nvarchar](100) NULL,
 	[LastName] [nvarchar](100) NULL,
 	[Email] [nvarchar](max) NULL,
-	[Date] [date] NULL
+	[Date] [date] NULL,
+	[Comments] [nvarchar](max) NULL
 	)
